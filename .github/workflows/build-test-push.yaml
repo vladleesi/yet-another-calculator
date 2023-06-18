@@ -21,8 +21,11 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Build android app
+        run: ./gradlew assembleDebug
+
+      - name: Build iOS shared code
+        run: ./gradlew :shared:compileKotlinIosArm64
 
       - name: Run unit tests
         run: ./gradlew test
