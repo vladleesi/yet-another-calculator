@@ -1,5 +1,7 @@
 # Yet Another Calculator (YAC)
 
+YAC is another calculator built with [Kotlin Multiplatform Mobile](https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html) and [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/).
+
 | Android (Dark theme) | iOS (Light theme) |
 | ----------- | ----------- |
 | ![Screenshot_20230620_185132](https://github.com/vladleesi/yet-another-calculator/assets/30999008/56b6ffcb-23b6-4478-9799-129c4c365512) | ![Simulator Screenshot - iPhone 14 Pro - 2023-06-20 at 18 51 58](https://github.com/vladleesi/yet-another-calculator/assets/30999008/779103cb-33db-49ce-a041-33ef7c594b3f) |
