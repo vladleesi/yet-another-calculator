@@ -31,7 +31,6 @@ class CalculatorViewModel {
     private suspend fun enterNumber(number: Int) {
         if (state.operation == null) {
             when {
-                state.number1.length >= MAX_INPUT_LENGTH -> return
                 state.isCalculationPerformed -> {
                     stateFlow.emit(
                         state.copy(
@@ -41,7 +40,7 @@ class CalculatorViewModel {
                     )
                     return
                 }
-
+                state.number1.length >= MAX_INPUT_LENGTH -> return
                 else -> {
                     stateFlow.emit(state.copy(number1 = state.number1 + number))
                     return
