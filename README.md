@@ -1,8 +1,8 @@
 # Yet Another Calculator (YAC)
 
-| Android (Light theme) | iOS (Dark theme) |
+| Android (Dark theme) | iOS (Light theme) |
 | ----------- | ----------- |
-| ![Screenshot_20230620_185132](https://github.com/vladleesi/yet-another-calculator/assets/30999008/f987e5b9-b6a5-4093-a66a-0f8b8bc20de2) | ![Simulator Screenshot - iPhone 14 Pro - 2023-06-20 at 18 51 58](https://github.com/vladleesi/yet-another-calculator/assets/30999008/f02b61a5-f1ca-434a-9bfd-f3a61c648bbb) |
+| ![Screenshot_20230620_185132](https://github.com/vladleesi/yet-another-calculator/assets/30999008/56b6ffcb-23b6-4478-9799-129c4c365512) | ![Simulator Screenshot - iPhone 14 Pro - 2023-06-20 at 18 51 58](https://github.com/vladleesi/yet-another-calculator/assets/30999008/779103cb-33db-49ce-a041-33ef7c594b3f) |
 
 ### Project Structure
 The project follows the Compose Multiplatform structure, allowing code sharing between Android and iOS platforms. Here's a brief overview of the project structure:
@@ -21,7 +21,7 @@ The project follows the Compose Multiplatform structure, allowing code sharing b
 2. Click Run
 
 ### Contributing
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to submit a pull request.
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to create an issue or submit a pull request.
 
 ### Licence
 This project is licensed under the [MIT License](LICENSE).
