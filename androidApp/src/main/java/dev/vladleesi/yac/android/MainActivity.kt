@@ -8,20 +8,28 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import dev.vladleesi.yac.CalculatorApp
+import dev.vladleesi.yac.ui.CalculatorApp
+import dev.vladleesi.yac.viewmodel.CalculatorViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            YACTheme {
+            MaterialTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    CalculatorApp()
+                    // TODO: Will be destroyed with activity
+                    val viewModel = CalculatorViewModel()
+                    val state = viewModel.stateFlow.collectAsState()
+                    CalculatorApp(
+                        stateFlow = state,
+                        onAction = viewModel::onAction
+                    )
                 }
             }
         }
@@ -36,7 +44,7 @@ fun GreetingView(text: String) {
 @Preview
 @Composable
 fun DefaultPreview() {
-    YACTheme {
+    MaterialTheme {
         GreetingView("Hello, Android!")
     }
 }
