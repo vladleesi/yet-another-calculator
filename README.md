@@ -26,4 +26,4 @@ The project follows the Kotlin Multiplatform structure, allowing code sharing be
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to create an issue or submit a pull request.
 
 ### Licence
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Apache License 2.0](LICENSE).
